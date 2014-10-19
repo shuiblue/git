@@ -5,7 +5,7 @@
 \deftab720
 \pard\pardeftab720\sl400
 
-\f0\fs24 \cf2 \cb3 Git is a version control system.\
+\f0\fs24 \cf2 \cb3 Git is a distributed version control system.\
 Git is free software.
 \fs26 \
 }
