@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import server.Server;
 import client.Client;
-
-
-
-
-
-
-
+/*if[Console]*/
+import client.CmdClient;
+/*end[Console]*/
+/*if[GUI]*/
+import client.GUISign;
+import client.Gui;
+/*end[GUI]*/
 public class MainServer {
 
 	//the num of client to show
@@ -73,17 +73,17 @@ public class MainServer {
 		Client c;
 		for (int i = 0; i < num ; i++) {
 		   c = new Client(host, port);
-		   
-
-
+		   /*if[GUI]*/
+		   GUISign gs = new GUISign(c);
+		   /*end[GUI]*/
 	
 		}
-		   
-
-
-
-
-
-
+		   /*if[Console]*/
+		 
+		c = new Client(host, port);
+		
+		CmdClient cmd = new CmdClient("this is cmd", c);
+		
+		   /*end[Console]*/
 	}
 }

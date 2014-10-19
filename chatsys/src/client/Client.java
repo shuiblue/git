@@ -6,12 +6,12 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Iterator;
-
-
-
-
-
-
+/*if[en1]*/
+import common.Base64Encrypt;
+/*end[en1]*/
+/*if[en2]*/
+import common.ReverseEncrypt;
+/*end[en2]*/
 import common.TextMessage;
 
 /**

@@ -24,6 +24,8 @@ build: $(SOURCE_FILES:.java=.class)
 #pattern rule
 %.class: %.java
 	$(JAVAC) -d bin/ src/client/*.java src/server/*.java src/common/*.java src/start/*.java
+
+
 clean:
 	-rm -frv bin/*
 run:

@@ -6,12 +6,12 @@ import java.util.Random;
 
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
-
-
-
-
-
-
+/*if[en1]*/
+import common.Base64Encrypt;
+/*end[en1]*/
+/*if[en2]*/
+import common.ReverseEncrypt;
+/*end[en2]*/
 
 public class User {
 

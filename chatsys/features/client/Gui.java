@@ -118,6 +118,7 @@ public class Gui extends Frame implements ChatLineListener {
 //			
 			
 			
+			/*if[col]*/	
 			String s_color = ColorChooser.getSelectedItem();
 			if (s_color.equals("Blue")){
 				tm = new TextMessage(this.getTitle() + " : " + (String) e.arg, null, Color.blue);
@@ -127,8 +128,7 @@ public class Gui extends Frame implements ChatLineListener {
 				tm = new TextMessage(this.getTitle() + " : " + (String) e.arg, null, Color.green);	
 			}
 			
-			//GUI通过client把消息发给server
-			
+			/*end[col]*/
 			chatClient.send(tm);//
 			inputField.setText("");
 			return true;

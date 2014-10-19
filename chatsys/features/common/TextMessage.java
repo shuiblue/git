@@ -10,7 +10,11 @@ import common.Base64Encrypt;
 import common.ReverseEncrypt;
 /*end[en2]*/
 import common.TextMessage;
+
+/*if[ProfanityFilter]*/
 import common.ProfanityFilter;
+/*end[ProfanityFilter]*/
+
 
 
 
@@ -29,7 +33,9 @@ public class TextMessage implements Serializable {
 	
 	public TextMessage(String content, EncryptHelper encrypter, Color color) {
 		super();
+		/*if[ProfanityFilter]*/
 		content = ProfanityFilter.ProFilter(content);
+		/*end[ProfanityFilter]*/
 		String a = content;
 		
 	
